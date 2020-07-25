@@ -1,0 +1,29 @@
+<center>
+    <h1>COUNT</h1>
+</center>
+<br>
+<h3>Your text : </h3>{{ fulltext }}
+
+<br>
+<h3>WORD COUNT : </h3>
+<center>
+    <table style="border: 1px gray; padding: 0.2rem; align-self: center; background-color: blue;">
+        <thead>
+            <tr>
+                <th>WORD</th>
+                <th>COUNT'S</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for word, count in sortedWordes %}
+            <tr>
+                <td>{{ word }}</td>
+                <td align="center">{{ count }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</center>
+
+
